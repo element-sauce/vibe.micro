@@ -7,14 +7,16 @@
         android:layout_alignParentBottom="true">
 
         <!--layout_height wrap_content?-->
-        <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        <!--app:itemHorizontalTranslationEnabled="false"-->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/bottomNavBar"
             android:background="@drawable/white_grey_border_top"
-            app:menu="@menu/bottom_nav_menu">
+            app:menu="@menu/bottom_nav_menu"
+            app:labelVisibilityMode="unlabeled">
 
-        </com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     </RelativeLayout>
 

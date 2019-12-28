@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import developer.billx.android.gram.util.BottomNavViewHelper;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -19,7 +21,8 @@ public class HomeActivity extends AppCompatActivity {
 
     private void setupBottomNavView() {
         Log.d(TAG, "setupBottomNavView: setting up bottom nav");
-        BottomNavigationViewEx ex = findViewById(R.id.bottomNavBar);
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavBar);
+        BottomNavViewHelper.disableShiftMode(bottomNavigationView);
 
     }
 }
