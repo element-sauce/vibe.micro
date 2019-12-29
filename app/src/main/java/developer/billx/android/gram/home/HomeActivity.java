@@ -1,4 +1,6 @@
-package developer.billx.android.gram;
+package developer.billx.android.gram.home;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -6,24 +8,22 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import developer.billx.android.gram.R;
 import developer.billx.android.gram.util.BottomNavViewHelper;
 
-public class FavoritesActivity extends AppCompatActivity {
-    private static final String TAG = "FavoritesActivity";
+public class HomeActivity extends AppCompatActivity {
 
-    private Context mContext = FavoritesActivity.this;
-    private static final int ACTIVITY_ID = 3;
+    private static final String TAG = "HomeActivity";
+    private Context mContext = HomeActivity.this;
+    private static final int ACTIVITY_ID = 0;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Log.d(TAG, "onCreate: begun");
+        Log.d(TAG, "onCreate: begin");
 
         setupBottomNavView();
     }

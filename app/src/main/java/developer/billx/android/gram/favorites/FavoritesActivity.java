@@ -1,4 +1,4 @@
-package developer.billx.android.gram;
+package developer.billx.android.gram.favorites;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,13 +11,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import developer.billx.android.gram.R;
 import developer.billx.android.gram.util.BottomNavViewHelper;
 
-public class SearchActivity extends AppCompatActivity {
-    private static final String TAG = "SearchActivity";
+public class FavoritesActivity extends AppCompatActivity {
+    private static final String TAG = "FavoritesActivity";
 
-    private Context mContext = SearchActivity.this;
-    private static final int ACTIVITY_ID = 1;
+    private Context mContext = FavoritesActivity.this;
+    private static final int ACTIVITY_ID = 3;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

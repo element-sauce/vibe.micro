@@ -1,4 +1,4 @@
-package developer.billx.android.gram;
+package developer.billx.android.gram.share;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import developer.billx.android.gram.R;
 import developer.billx.android.gram.util.BottomNavViewHelper;
 
 public class ShareActivity extends AppCompatActivity {

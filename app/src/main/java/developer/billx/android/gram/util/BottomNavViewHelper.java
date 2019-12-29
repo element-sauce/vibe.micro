@@ -3,7 +3,6 @@ package developer.billx.android.gram.util;
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationView;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,12 +14,12 @@ import androidx.annotation.NonNull;
 
 import java.lang.reflect.Field;
 
-import developer.billx.android.gram.FavoritesActivity;
-import developer.billx.android.gram.HomeActivity;
-import developer.billx.android.gram.ProfileActivity;
+import developer.billx.android.gram.favorites.FavoritesActivity;
+import developer.billx.android.gram.home.HomeActivity;
+import developer.billx.android.gram.profile.ProfileActivity;
 import developer.billx.android.gram.R;
-import developer.billx.android.gram.SearchActivity;
-import developer.billx.android.gram.ShareActivity;
+import developer.billx.android.gram.search.SearchActivity;
+import developer.billx.android.gram.share.ShareActivity;
 
 @SuppressLint("RestrictedApi")
 public class BottomNavViewHelper {

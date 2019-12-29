@@ -1,4 +1,4 @@
-package developer.billx.android.gram;
+package developer.billx.android.gram.search;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,14 +11,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import developer.billx.android.gram.R;
 import developer.billx.android.gram.util.BottomNavViewHelper;
 
-public class ProfileActivity extends AppCompatActivity {
-    private static final String TAG = "ProfileActivity";
+public class SearchActivity extends AppCompatActivity {
+    private static final String TAG = "SearchActivity";
 
-    private Context mContext = ProfileActivity.this;
-    private static final int ACTIVITY_ID = 4;
-    
+    private Context mContext = SearchActivity.this;
+    private static final int ACTIVITY_ID = 1;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
