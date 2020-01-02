@@ -42,6 +42,10 @@ public class HomeActivity extends AppCompatActivity {
 
         TabLayout tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(pager);
+
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_camera);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_logo);
+        tabLayout.getTabAt(2).setIcon(R.drawable.ic_send);
     }
 
     private void setupBottomNavView() {

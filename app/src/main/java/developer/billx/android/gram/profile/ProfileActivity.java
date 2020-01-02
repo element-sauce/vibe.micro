@@ -8,6 +8,7 @@ import android.view.MenuItem;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -38,4 +39,18 @@ public class ProfileActivity extends AppCompatActivity {
         MenuItem item = menu.getItem(ACTIVITY_ID);
         item.setChecked(true);
     }
+
+    private void setupToolbar() {
+        Toolbar toolbar = findViewById(R.id.profileToolbar);
+        setSupportActionBar(toolbar);
+
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                Log.d(TAG, "onMenuItemClick: clicked profile menu item");
+                return false;
+            }
+        });
+    }
 }
+
