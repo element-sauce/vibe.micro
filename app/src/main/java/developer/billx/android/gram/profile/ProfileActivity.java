@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,10 +25,11 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_profile);
         Log.d(TAG, "onCreate: begun");
 
-        setupBottomNavView();
+        // setupBottomNavView();, bottom nav not set up yet in layout
+        setupToolbar();
     }
 
     private void setupBottomNavView() {
@@ -47,10 +49,23 @@ public class ProfileActivity extends AppCompatActivity {
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                Log.d(TAG, "onMenuItemClick: clicked profile menu item");
+                Log.d(TAG, "onMenuItemClick: clicked profile menu item " + item);
+
+                switch (item.getItemId()) {
+                    case R.id.profileMenu:
+                        Log.d(TAG, "onMenuItemClick: going to profile settings");
+                }
+
                 return false;
             }
         });
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_profile, menu);
+        return true;
     }
 }
 
